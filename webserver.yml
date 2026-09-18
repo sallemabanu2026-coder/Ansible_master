@@ -17,7 +17,7 @@
         state: started
       when: ansible_os_family == "Debian"
 
-      - name: Install webserver on anisble RedHat nodes (yum install httpd -y)
+    - name: Install webserver on anisble RedHat nodes (yum install httpd -y)
       yum:
         name: httpd
         state: present
