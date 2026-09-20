@@ -13,3 +13,7 @@
 [mydebianserver]
 172.31.0.9
 172.31.1.48
+
+[mywebserver:vars]
+mywebpackageondebian=apache2
+mywebpackagedonRedHat=httpd
