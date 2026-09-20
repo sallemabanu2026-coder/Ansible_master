@@ -1,0 +1,3 @@
+---
+mywebpackageondebian: apache2
+mywebpackagedonRedHat: httpd
