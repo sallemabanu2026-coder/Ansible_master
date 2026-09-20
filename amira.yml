@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+    name: Install webserver on task01 (apt-get install apache2 -y)
+    apt: 
+      name: apache2 -y
+      state: present
+    when: anisble_os_family == "Debian"
+      
