@@ -2,9 +2,9 @@
 - hosts: all
   become: yes
   tasks: 
-    name: Install webserver on task01 (apt-get install apache2 -y)
+  - name: Install webserver on task01 (apt-get install apache2 -y)
     apt: 
-      name: apache2 -y
+      name: apache2
       state: present
-    when: anisble_os_family == "Debian"
+    when: ansible_os_family == "Debian"
       
