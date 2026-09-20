@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: mywebserver
   become: yes
   gather_facts: yes
 
@@ -7,24 +7,24 @@
 
     - name: Install webserver on task01 (apt-get install apache2 -y)
       apt:
-        name: apache2
+        name: "{{mywebpackageondebian}}"
         state: present
       when: ansible_os_family == "Debian"
 
     - name: Start webserver on task02 (service apache2 start)
       service:
-        name: apache2
+        name: "{{mywebpackageondebian}}"
         state: started
       when: ansible_os_family == "Debian"
 
     - name: Install webserver on anisble RedHat nodes (yum install httpd -y)
       yum:
-        name: httpd
+        name: "{{mywebpackagedonRedHat}}"
         state: present
       when: ansible_os_family == "RedHat"
 
     - name: Start webserver on anisble RedHat nodes (service httpd start)
       service:
-        name: httpd
+        name: "{{mywebpackagedonRedHat}}"
         state: started
       when: ansible_os_family == "RedHat"
