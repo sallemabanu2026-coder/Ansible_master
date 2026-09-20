@@ -1,5 +1,5 @@
 ---
 mywebpackageondebian: apache2
 mywebpackagedonRedHat: httpd
-mywebpackageondebian: openjdk-21-jdk
-mywebpackagedonRedHat: java-21-amazon-corretto-deve1
+myjavapackondebian: openjdk-21-jdk
+myjavapackondebian: java-21-amazon-corretto-deve1
