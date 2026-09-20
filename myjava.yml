@@ -6,12 +6,12 @@
 
     - name: Install java on debian server
       apt:
-        name: {{myjavapackondebian}}
+        name: "{{myjavapackondebian}}"
         state: present
       when: ansible_os_family == "Debian"
 
     - name: Install java on RedHat server
       yum:
-        name: {{myjavapackonRedHat}}
+        name: "{{myjavapackonRedHat}}"
         state: present
       when: ansible_os_family == "RedHat"
