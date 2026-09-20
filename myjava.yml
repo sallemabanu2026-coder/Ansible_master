@@ -10,8 +10,4 @@
         state: present
       when: ansible_os_family == "Debian"
 
-    - name: Install java on RedHat server
-      yum:
-        name: "{{myjavapackonRedHat}}"
-        state: present
-      when: ansible_os_family == "RedHat"
+  
