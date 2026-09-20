@@ -2,3 +2,4 @@
 mywebpackageondebian: apache2
 mywebpackagedonRedHat: httpd
 myjavapackondebian: openjdk-21-jdk
+myjavapackonRedHat: java-21-amazon-corretto-devel
