@@ -6,6 +6,6 @@
     myvar02: tree
     myvar03: wget
   tasks:
-  - name : i want to dispay myvar01
+  - name: i want to dispay myvar01
     debug:
     msg: "{{myvar01}}"
