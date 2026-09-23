@@ -1,11 +1,13 @@
 ---
 - hosts: 172.31.2.136
   become: yes
-  vars: 
+
+  vars:
     myvar01: git
     myvar02: tree
     myvar03: wget
+
   tasks:
-  - name: i want to dispay myvar01
-    debug:
-    msg: "{{myvar01}}"
+    - name: I want to display myvar01
+      debug:
+        msg: "{{ myvar01 }}"
